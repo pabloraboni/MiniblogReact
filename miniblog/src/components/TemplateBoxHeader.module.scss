@@ -1,0 +1,18 @@
+.pr-box__header{
+  
+  img{
+    width: 200px;
+  }
+
+  .pr-header__content{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+}

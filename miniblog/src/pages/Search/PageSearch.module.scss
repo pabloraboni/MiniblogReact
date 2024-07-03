@@ -1,0 +1,9 @@
+@import "../../sass/importMixins.scss";
+
+.pr-grid__posts {
+
+    width: 100%;
+    @include mx-grid(3);
+    @include mx-grid-gap(30);
+
+}

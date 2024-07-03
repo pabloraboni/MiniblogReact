@@ -1,0 +1,81 @@
+@import "../../sass/importMixins.scss";
+
+.pr-page__post {
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-start();
+    gap: 20px;
+}
+
+.pr-box__post {
+    flex: 1;
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-start();
+    gap: 30px;
+    padding-right: 20px;
+    border-right: 1px solid #e2e2e2;
+}
+
+.pr-post__image {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.pr-post__descriptions {
+    flex: 1;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pr-post__description {
+    font-size: 1em;
+    margin: 0;
+}
+
+.pr-post__tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.pr-post__footer {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+}
+
+.pr-post__stats {
+    flex: 1;
+    @include mx-flex();
+    @include mx-flex-row();
+
+    p {
+        margin: 0;
+        font-size: 0.8em;
+    }
+}
+
+.pr-post__buttons {
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    @include mx-flex-justify-end();
+    gap: 20px;
+
+    .pr-button__icon {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+.pr-box__actions {
+    @include mx-flex();
+    @include mx-flex-column();
+    gap: 20px;
+}

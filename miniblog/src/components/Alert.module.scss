@@ -1,0 +1,43 @@
+.pr-alert__component{
+  position: fixed;
+  top: 90px;
+  right: 40px;
+}
+
+.pr-alert__content{
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  
+  background: #196cca;
+  border: 1px solid rgb(2, 19, 28);
+
+  .pr-alert__p{
+    flex: 1;
+    color: #fff;
+    p{     
+      margin:0;
+    }
+  }
+
+  .pr-alert__icon {
+    display: none;
+    &:before{
+      content: "ℹ️";
+      color: #fff;
+    }
+  }
+  .pr-alert__close {
+    &:before{
+      content: "✖";
+      color: #fff;
+    }
+  }
+
+}
+

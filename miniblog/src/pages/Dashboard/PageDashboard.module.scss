@@ -1,0 +1,22 @@
+@import "../../sass/importMixins.scss";
+
+.pr-page__dashboard {
+
+    @include mx-flex();
+    @include mx-flex-center();
+
+    padding: 20px 0;
+
+}
+
+.pr-dashboard__content{
+    width: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    gap:40px;
+    p {
+        font-size: 0.9em;
+        margin: 5px 0;
+        text-align: justify;
+    }
+}

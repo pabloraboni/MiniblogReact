@@ -1,0 +1,56 @@
+@import "../sass/importMixins.scss";
+
+.pr-box__post{
+    &:hover{
+        transition: 0.2s;
+        transform: scale(1.020);
+    }
+}
+.pr-post__image{
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pr-post__descriptions{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.pr-post__description{
+    font-size: 1em;
+    margin: 0;
+}
+
+.pr-post__tags{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.pr-post__footer{
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.pr-post__stats{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;    
+}
+
+.pr-post__buttons{
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    @include mx-flex-justify-end();
+    gap: 20px;    
+    .pr-button__icon{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #333;
+    }
+}

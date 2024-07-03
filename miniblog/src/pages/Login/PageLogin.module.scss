@@ -1,0 +1,23 @@
+@import "../../sass/importMixins.scss";
+
+.pr-page__login{
+
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+
+    padding: 30px 0;
+
+    .pr-login__content{
+        width: 100%;
+        max-width: 500px;
+        @include mx-flex();
+        @include mx-flex-column();
+        gap: 20px;
+    }
+
+    h1,form{
+        width: 100%;
+    }
+    
+}

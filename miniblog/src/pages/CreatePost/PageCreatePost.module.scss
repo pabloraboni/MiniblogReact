@@ -1,0 +1,33 @@
+@import "../../sass/importMixins.scss";
+
+.pr-page__createPost {
+
+    @include mx-flex();
+    @include mx-flex-center();
+
+    padding: 20px 0;
+
+    span {
+        display: block;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+}
+
+.pr-createPost__content{
+    width: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    gap:40px;
+    p {
+        font-size: 0.9em;
+        margin: 5px 0;
+        text-align: justify;
+    }
+}
+
+form{
+    width: 500px;
+}

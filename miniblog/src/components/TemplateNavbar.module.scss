@@ -1,0 +1,35 @@
+.pr-box__menu{  
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  
+    .pr-menu__item{
+      text-decoration: none;
+      color: #333;
+      cursor: pointer;
+      font-weight: 400;
+      padding: 5px 0;
+      border-bottom: 1px solid #fff;
+      border: 0;
+      background: transparent;
+
+  
+      &:hover{
+        border-color: #333;
+      }    
+
+      &.--active{
+        border-bottom: 1px solid #333 !important;
+      }
+    }
+    button{
+      &.pr-menu__item{
+        font-size: 1.5em;
+        padding: 0;
+        padding-top: 10px;
+      }
+    }
+    
+  }

@@ -1,0 +1,15 @@
+@import "../../sass/importMixins.scss";
+
+.pr-page__home{
+    width: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    gap:20px;
+}
+.pr-grid__posts {
+
+    width: 100%;
+    @include mx-grid(3);
+    @include mx-grid-gap(30);
+
+}
