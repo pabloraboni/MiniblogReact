@@ -1,6 +1,6 @@
 {
   "homepage": "https://pabloraboni.github.io/MiniblogReact",
-  "name": "miniblog",
+  "name": "MiniblogReact",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy" : "npm run build",
-    "deploy": "gn-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "firebase": "^10.12.2",
