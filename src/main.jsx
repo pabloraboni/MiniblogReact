@@ -17,7 +17,7 @@ import PageCreatePost from './pages/CreatePost/PageCreatePost.jsx'
 import PageSearch from './pages/Search/PageSearch.jsx'
 
 import ProtectedRoute from './components/ProtectedRoute.jsx'
-import PublicRoute from './components/PublickRoute.jsx'
+import PublicRoute from './components/PublicRoute.jsx'
 import PagePost from './pages/Post/PagePost.jsx'
 import PageEditPost from './pages/EditPost/PageEditPost.jsx'
 
