@@ -90,7 +90,7 @@ const PageEditPost = () => {
                     <input
                       type="text"
                       name="name"
-                      value={title}
+                      value={title || ""}
                       onChange={(e) => setTitle(e.target.value)}
                       required
                       placeholder="Defina um título para o post"
@@ -102,7 +102,7 @@ const PageEditPost = () => {
                     <input
                       type="text"
                       name="email"
-                      value={image}
+                      value={image || ""}
                       onChange={(e) => setImage(e.target.value)}
                       required
                       placeholder="Url da imagem"
@@ -114,7 +114,7 @@ const PageEditPost = () => {
                     <textarea
                       type="text"
                       name="password"
-                      value={body}
+                      value={body || ""}
                       onChange={(e) => setBody(e.target.value)}
                       required
                       placeholder="Digite uma descrição para o post"
@@ -126,7 +126,7 @@ const PageEditPost = () => {
                     <input
                       type="text"
                       name="confirmPassword"
-                      value={tags}
+                      value={tags || ""}
                       onChange={(e) => setTags(e.target.value)}
                       required
                       placeholder="Crie tags para o post (separadas por vírgula)"
