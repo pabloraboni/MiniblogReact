@@ -85,9 +85,11 @@ const router = createBrowserRouter([
       }
     ]
   }
-], {
+]
+, {
   basename: "/MiniblogReact"
-});
+}
+);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
