@@ -6,7 +6,11 @@
     @include mx-flex-center();
 
     padding: 50px 0;
-
+    padding: 20px;
+    box-sizing: border-box;
+    @include mx-responsive(1024px){
+        padding: 0px;
+    }
     span {
         display: block;
         font-size: 1em;
@@ -19,8 +23,13 @@
     width: 100%;
     max-width: 700px;
     @include mx-flex();
-    @include mx-flex-row();
-    @include mx-flex-align-start();
+    @include mx-flex-column();
+
+    @include mx-responsive(1024px){
+        @include mx-flex-row();
+        @include mx-flex-align-start();
+    }
+
     gap:40px;
     p {
         font-size: 0.9em;
@@ -31,6 +40,8 @@
 
 .pr-photo {
     border-radius: 20px;
-    max-width: 140px;
     margin-top: 0;
+    @include mx-responsive(1024px){
+        max-width: 140px;
+    }
 }

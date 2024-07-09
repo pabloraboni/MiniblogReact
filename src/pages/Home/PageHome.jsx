@@ -34,7 +34,7 @@ const PageHome = () => {
     <>
       <div className={styles["pr-page__home"]}>
         <form className="--wd-100" onSubmit={handleSubmit}>
-          <div className="--wd-100 --frow-center --fgap-10 pr-box__form">
+          <div className="--wd-100 --fcol --fgap-10 --torowcenter pr-box__form">
             <label className="pr-box__input --flex-1">
               <input
                 name="search"

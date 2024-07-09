@@ -5,8 +5,12 @@
     @include mx-flex();
     @include mx-flex-center();
 
-    padding: 20px 0;
-
+    
+    padding: 20px;
+    box-sizing: border-box;
+    @include mx-responsive(1024px){
+        padding: 20px 0;
+    }
     span {
         display: block;
         font-size: 1em;
@@ -24,10 +28,17 @@
 
     img{
         border-radius: 15px;
-        max-width: 400px;
+        height: 200px;
+        @include mx-responsive(1024px){
+            height: auto;
+            max-width: 500px;
+        }
     }
 }
 
 form{
-    width: 500px;
+    width: 100%;
+    @include mx-responsive(1024px){
+        max-width: 500px;
+    }
 }

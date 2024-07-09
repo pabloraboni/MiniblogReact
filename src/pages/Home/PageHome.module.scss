@@ -5,11 +5,20 @@
     @include mx-flex();
     @include mx-flex-column();
     gap:20px;
+    padding: 20px;
+    box-sizing: border-box;
+    @include mx-responsive(1024px){
+        padding: 0px;
+    }
 }
 .pr-grid__posts {
 
     width: 100%;
-    @include mx-grid(3);
+    @include mx-grid(1);
     @include mx-grid-gap(30);
+
+    @include mx-responsive(1024px){
+        @include mx-grid(3);
+    }
 
 }

@@ -5,9 +5,12 @@
     @include mx-flex();
     @include mx-flex-column();
     @include mx-flex-center();
-
-    padding: 30px 0;
-
+   
+    padding: 20px;
+    box-sizing: border-box;
+    @include mx-responsive(1024px){
+        padding: 30px 0;
+    }
     .pr-register__content {
         width: 100%;
         max-width: 500px;

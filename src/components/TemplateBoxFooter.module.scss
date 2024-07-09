@@ -1,3 +1,5 @@
+@import "../sass/importMixins.scss";
+
 .pr-box__footer {
 
   background: #333;
@@ -5,12 +7,18 @@
 
   .pr-footer__content {
     width: 100%;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
+    padding: 20px 0;
     box-sizing: border-box;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    gap:20px;
+
+    @include mx-responsive(1024px){
+        @include mx-flex-row();
+        @include mx-flex-align-center();
+        padding: 10px 0;
+    }
   }
 
   p{
@@ -18,10 +26,20 @@
     margin: 0;
     color: #fff;
     font-size: 0.8em;
+    text-align: center;
+    order: 2;
+    @include mx-responsive(1024px){
+      text-align: left;
+      order: 1;
+    }
   }
 
   img {
     width: 30px;
+    order: 1;
+    @include mx-responsive(1024px){
+      order: 2;
+    }
   }
 
 }

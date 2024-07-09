@@ -1,0 +1,13 @@
+
+@include mx-responsive(1024px){
+    .--torowcenter{
+        @include mx-flex();
+        @include mx-flex-row();
+        @include mx-flex-align-center();
+    }
+    .--torowstart{
+        @include mx-flex();
+        @include mx-flex-row();
+        @include mx-flex-align-start();
+    }
+}

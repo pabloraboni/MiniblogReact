@@ -79,7 +79,7 @@ const PageEditPost = () => {
           <>
             <div className={styles["pr-editPost__content"]}>
               <h1>Editar Post</h1>
-              <div className="--wd-100 --frow-start --fgap-20">
+              <div className="--wd-100 --fcol --torowstart --fgap-20">
                 <img src={image} />
                 <form
                   className="--flex-1 pr-box__form --fcol --fgap-20"
