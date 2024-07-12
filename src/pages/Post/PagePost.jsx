@@ -45,7 +45,7 @@ const PagePost = () => {
             </div>
           </article>
           <aside className={styles["pr-box__actions"]}>
-            <Link to={`/posts/#`} className="pr-button --outline --icon">
+            <Link to={`/posts/edit/${id}`} className="pr-button --outline --icon">
               <span>
                 <RiEditLine />
               </span>
