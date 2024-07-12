@@ -87,7 +87,7 @@ const router = createBrowserRouter([
   }
 ]
 , {
-  basename: "/MiniblogReact"
+  basename: "/miniblog-react"
 }
 );
 

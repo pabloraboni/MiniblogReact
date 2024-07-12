@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pabloraboni.github.io/MiniblogReact",
-  "name": "miniblogreact",
+  "homepage": "https://pabloraboni.github.io/miniblog-react",
+  "name": "miniblog-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
